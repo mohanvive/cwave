@@ -1,0 +1,488 @@
+{
+  "id": "e756464b-5ba4-4a58-9059-4874ea316085",
+  "name": "data-retrieval",
+  "description": "Session export",
+  "threads": [
+    {
+      "id": "thread-d4c7bb87",
+      "description": "",
+      "traces": [
+        {
+          "id": "775ed110895be4aedd29aeb1ca2e073f",
+          "userMessage": {
+            "role": "user",
+            "content": "What is the PTO policy?"
+          },
+          "iterations": [
+            {
+              "history": [
+                {
+                  "role": "system",
+                  "content": "# Role  \nHR Agent  \n\n# Instructions  \nYou are an HR assistant for CWave. Your role is to help employees with human resources questions and support.\n\n**Scope:**\n\n* Answer only questions related to HR topics: benefits, payroll, leave policies, hiring, onboarding, workplace conduct, performance management, compensation, and similar HR matters.\n* Refer only to CWave's HR knowledge base and policies. Do not provide general HR advice or information from external sources.\n* If a question falls outside HR or is not covered in your knowledge base, politely decline and suggest the employee contact the HR department directly.\n\n**Behavior:**\n\n* Be professional and courteous in all interactions.\n* Keep responses clear and concise.\n* If you're unsure about a policy or don't have the information, say so rather than guessing.\n* Do not discuss topics unrelated to HR (technical support, business strategy, product questions, etc.).\n\n**Tools:**\n\n* Use getEventsTool to retrieve HR calendar events when employees ask about upcoming HR-related events, deadlines, training sessions, or company-wide HR activities.\n\n**When uncertain:**\n\n* If a question is borderline HR-related but you lack specific information, acknowledge the HR relevance but direct the employee to HR for accurate details.\n* Never invent or assume company policies.\n"
+                },
+                {
+                  "role": "user",
+                  "content": "What is the PTO policy?"
+                },
+                {
+                  "role": "assistant",
+                  "content": null,
+                  "toolCalls": [
+                    {
+                      "name": "retrievePolicies",
+                      "arguments": {
+                        "query": "PTO policy"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "toolCalls": [
+                  {
+                    "name": "retrievePolicies",
+                    "arguments": {
+                      "query": "PTO policy"
+                    }
+                  }
+                ]
+              },
+              "startTime": "2026-05-13T15:54:59.150Z",
+              "endTime": "2026-05-13T15:55:00.873Z"
+            },
+            {
+              "history": [
+                {
+                  "role": "system",
+                  "content": "# Role  \nHR Agent  \n\n# Instructions  \nYou are an HR assistant for CWave. Your role is to help employees with human resources questions and support.\n\n**Scope:**\n\n* Answer only questions related to HR topics: benefits, payroll, leave policies, hiring, onboarding, workplace conduct, performance management, compensation, and similar HR matters.\n* Refer only to CWave's HR knowledge base and policies. Do not provide general HR advice or information from external sources.\n* If a question falls outside HR or is not covered in your knowledge base, politely decline and suggest the employee contact the HR department directly.\n\n**Behavior:**\n\n* Be professional and courteous in all interactions.\n* Keep responses clear and concise.\n* If you're unsure about a policy or don't have the information, say so rather than guessing.\n* Do not discuss topics unrelated to HR (technical support, business strategy, product questions, etc.).\n\n**Tools:**\n\n* Use getEventsTool to retrieve HR calendar events when employees ask about upcoming HR-related events, deadlines, training sessions, or company-wide HR activities.\n\n**When uncertain:**\n\n* If a question is borderline HR-related but you lack specific information, acknowledge the HR relevance but direct the employee to HR for accurate details.\n* Never invent or assume company policies.\n"
+                },
+                {
+                  "role": "user",
+                  "content": "What is the PTO policy?"
+                },
+                {
+                  "role": "assistant",
+                  "content": null,
+                  "toolCalls": [
+                    {
+                      "name": "retrievePolicies",
+                      "arguments": {
+                        "query": "PTO policy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "function",
+                  "content": "[{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"· Employees may take as much PTO as needed, subject to manager approval and business needs · A minimum of 15 business days per year is encouraged for employee wellness · PTO must be planned in advance when possible · No carryover of unused PTO into the following year · Upon separation, employees are not entitled to payout of unused PTO under this program - The pilot runs through December 31, 2026, and will be evaluated for company-wide expansion\",\"timestamp\":\"2026-05-13T06:39:21.080559\"}},\"similarityScore\":0.615607917},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Monthly  Accrual: PTO  is  accrued  monthly  on  the  last  business  day  of  each  month.  The  accrual  month includes all months of active employment. Part-Time Employees: PTO accrual is prorated based on scheduled hours. An employee scheduled for 30 hours per week (75% FTE) receives 75% of the annual allotment (e.g., 11.25 days in year 1). Accrual During Leave: Employees continue to accrue PTO while on paid leave (PTO, sick leave, holidays). Employees do NOT accrue PTO while on unpaid leave, FMLA, or military leave.\",\"timestamp\":\"2026-05-13T06:39:21.080541\"}},\"similarityScore\":0.585683584},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"ConnectWave's Paid Time Off (PTO) program provides employees with paid leave to use for vacation, personal business,  and  wellness.  PTO  is  separate  from  sick  leave  and  is  intended  to  provide  flexibility  for  workbalance. Employees should plan PTO in advance when possible and coordinate with their managers to ensure adequate coverage.\",\"timestamp\":\"2026-05-13T06:39:21.080537\"}},\"similarityScore\":0.57262069},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Program Overview: Starting January 1, 2026, the Digital Services division is launching an Unlimited PTO pilot program  for  Grade  8  and  above  employees. Eligibility: Digital  Services  employees  at  Grade  8+  with  a performance rating of \"Meets Expectations\" or above. Key Terms:\",\"timestamp\":\"2026-05-13T06:39:21.080555\"}},\"similarityScore\":0.547753096},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"1. Leave & Time-Off Policy Overview 2. Paid Time Off (PTO) 3. Sick Leave 4. Paid Holidays 5. Parental Leave 6. Family and Medical Leave Act (FMLA) 7. Disability Leave 8. Bereavement Leave 9. Jury Duty & Voting Leave 10. Military Leave (USERRA) 11. Sabbatical Leave 12. Unpaid Leave of Absence 13. Emergency & Weather Leave 14. Leave Request Procedures 15. Payout at Separation 16. Leave Interaction & Edge Cases 17. Related Policies & Cross-References\",\"timestamp\":\"2026-05-13T06:39:21.080518\"}},\"similarityScore\":0.544603944},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Maximum Carryover: Employees may carry over a maximum of 5 days of unused PTO into the next calendar year. Any PTO balance exceeding 5 days on January 1 is forfeited and cannot be paid out. Use-It-Or-Lose-It Deadline: Carried-over PTO must be used by March 31 of the following year or is forfeited. For example, up to 5 days of 2025 PTO must be used by March 31, 2026. Exception - Blackout Period Impact: If an employee cannot use carryover PTO due to blackout periods, they must notify HR in writing. HR may grant a single deadline extension to June 30 in exceptional circumstances.\",\"timestamp\":\"2026-05-13T06:39:21.080546\"}},\"similarityScore\":0.537128866},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Family and Medical Leave Act (federal law providing up to 12 weeks of unpaid leave) USERRA: Uniformed Services Employment and Reemployment Rights Act PTO: Paid Time Off, including vacation, personal days, and sick leave in some contexts\",\"timestamp\":\"2026-05-13T06:39:21.080532\"}},\"similarityScore\":0.5310812},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Retail Division: November 15 through December 31 (holiday season). PTO requests are not approved during this period unless previously scheduled before November 1. Infrastructure Division: Network freeze periods (typically  2-week  windows  during  major  system  upgrades,  announced  quarterly).  Specific  dates  are communicated 60 days in advance. Digital Services Division: No blackout periods (see Unlimited PTO Pilot Program section). Other Divisions: Limited blackout periods during peak business cycles, determined annually and communicated by December 1.\",\"timestamp\":\"2026-05-13T06:39:21.080550\"}},\"similarityScore\":0.52834},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Due to comprehensive content, the remaining sections (9-17) include: Jury Duty & Voting Leave (with 2-hour voting provision), Military Leave per USERRA (5-year protection, differential pay up to 12 months), Sabbatic Leave (7+ years tenure, 4 weeks at 100% or 8 weeks at 50% pay, 6-month advance planning required), Unpaid Leave of Absence (up to 30 days standard, case-by-case beyond, 12-month max in 5-year period), Emergency &  Weather  Leave  (company  closures  with  full  pay,  Infrastructure  deployment  with  10%  bonus),  Pandemic provisions  incorporating  CW-HR-002A  COVID-19  addendum,  Workday  procedures  for  leave  requests  with 2-business-day manager response expectation, State-specific payout rules showing CA/NY/WA require PTO and sick leave payout, while TX does not, Edge cases including leave accrual matrices during different leav types, workers' compensation coordination, and fitness-for-duty requirements for tower climbers.\",\"timestamp\":\"2026-05-13T06:39:21.080672\"}},\"similarityScore\":0.493242562},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Leave_Time_Off_Policy.pdf\",\"text\":\"Note: Sick leave is NOT to be used for vacation, personal business, or childcare when the child is health Employees should use PTO for these purposes.\",\"timestamp\":\"2026-05-13T06:39:21.080576\"}},\"similarityScore\":0.47465241}]",
+                  "name": "retrievePolicies"
+                }
+              ],
+              "output": {
+                "role": "assistant",
+                "content": "CWave's Paid Time Off (PTO) policy provides the following guidelines:\n\n- **Flexible Usage**: Employees may take as much PTO as needed, subject to manager approval and business needs. A minimum of 15 business days per year is encouraged for employee wellness.\n- **Advance Planning**: PTO should be planned in advance when possible.\n- **Carryover Policy**: There is no carryover of unused PTO into the following year.\n- **Payout**: Upon separation, employees are not entitled to a payout of unused PTO under this program.\n- **Accrual**: PTO is accrued monthly on the last business day of each month. Part-time employees accrue PTO on a prorated basis based on scheduled hours.\n- **Pilot Program**: There is an Unlimited PTO pilot program for Grade 8 and above employees in the Digital Services division, running through December 31, 2026.\n\nThese are the key aspects of the PTO policy. If you need more detailed information or have specific questions, please feel free to ask!",
+                "toolCalls": null
+              },
+              "startTime": "2026-05-13T15:55:07.586Z",
+              "endTime": "2026-05-13T15:55:09.995Z"
+            }
+          ],
+          "output": {
+            "role": "assistant",
+            "content": "CWave's Paid Time Off (PTO) policy provides the following guidelines:\n\n- **Flexible Usage**: Employees may take as much PTO as needed, subject to manager approval and business needs. A minimum of 15 business days per year is encouraged for employee wellness.\n- **Advance Planning**: PTO should be planned in advance when possible.\n- **Carryover Policy**: There is no carryover of unused PTO into the following year.\n- **Payout**: Upon separation, employees are not entitled to a payout of unused PTO under this program.\n- **Accrual**: PTO is accrued monthly on the last business day of each month. Part-time employees accrue PTO on a prorated basis based on scheduled hours.\n- **Pilot Program**: There is an Unlimited PTO pilot program for Grade 8 and above employees in the Digital Services division, running through December 31, 2026.\n\nThese are the key aspects of the PTO policy. If you need more detailed information or have specific questions, please feel free to ask!",
+            "toolCalls": null
+          },
+          "tools": [
+            {
+              "name": "retrievePolicies",
+              "description": "retrievePolicies",
+              "parametersSchema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "name": "getEventsTool",
+              "description": "Gets events. "
+            },
+            {
+              "name": "getLeaveBalance",
+              "description": "Get the leave balance for an employee. Returns annual, sick, and casual leave balances. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName"
+                ]
+              }
+            },
+            {
+              "name": "applyLeave",
+              "description": "Apply for leave on behalf of an employee. leaveType must be 'annual', 'sick', or 'casual'. Dates should be in YYYY-MM-DD format. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  },
+                  "leaveType": {
+                    "description": "Type of leave:annual,sick,or casual",
+                    "type": "string"
+                  },
+                  "endDate": {
+                    "description": "End date in YYYY-MM-DD format",
+                    "type": "string"
+                  },
+                  "numberOfDays": {
+                    "format": "int64",
+                    "description": "Number of leave days requested",
+                    "type": "integer"
+                  },
+                  "startDate": {
+                    "description": "Start date in YYYY-MM-DD format",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName",
+                  "leaveType",
+                  "startDate",
+                  "endDate",
+                  "numberOfDays"
+                ]
+              }
+            },
+            {
+              "name": "updateLeaveStatus",
+              "description": "Approve or reject a pending leave request for an employee. action must be 'approve' or 'reject'. requestIndex is the 0-based index of the leave request in the employee's history. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  },
+                  "requestIndex": {
+                    "format": "int64",
+                    "description": "0-based index of the leave request in the employee's history",
+                    "type": "integer"
+                  },
+                  "action": {
+                    "description": "Action to perform:approve or reject",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName",
+                  "requestIndex",
+                  "action"
+                ]
+              }
+            },
+            {
+              "name": "getLeaveHistory",
+              "description": "Get the full leave request history for an employee. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName"
+                ]
+              }
+            },
+            {
+              "name": "listEmployees",
+              "description": "List all employees registered in the leave management system.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            }
+          ],
+          "toolCalls": [
+            {
+              "name": "retrievePolicies",
+              "arguments": {
+                "query": "PTO policy"
+              }
+            }
+          ],
+          "startTime": "2026-05-13T15:54:59.145Z",
+          "endTime": "2026-05-13T15:55:10.001Z"
+        }
+      ],
+      "created_on": "2026-05-13T15:57:05.251Z"
+    },
+    {
+      "id": "thread-a7a04564",
+      "description": "",
+      "traces": [
+        {
+          "id": "a7a04564e2d75a3df578db3cacf4842c",
+          "userMessage": {
+            "role": "user",
+            "content": "What happens if I get 15 attendance points in a year?"
+          },
+          "iterations": [
+            {
+              "history": [
+                {
+                  "role": "system",
+                  "content": "# Role  \nHR Agent  \n\n# Instructions  \nYou are an HR assistant for CWave. Your role is to help employees with human resources questions and support.\n\n**Scope:**\n\n* Answer only questions related to HR topics: benefits, payroll, leave policies, hiring, onboarding, workplace conduct, performance management, compensation, and similar HR matters.\n* Refer only to CWave's HR knowledge base and policies. Do not provide general HR advice or information from external sources.\n* If a question falls outside HR or is not covered in your knowledge base, politely decline and suggest the employee contact the HR department directly.\n\n**Behavior:**\n\n* Be professional and courteous in all interactions.\n* Keep responses clear and concise.\n* If you're unsure about a policy or don't have the information, say so rather than guessing.\n* Do not discuss topics unrelated to HR (technical support, business strategy, product questions, etc.).\n\n**Tools:**\n\n* Use getEventsTool to retrieve HR calendar events when employees ask about upcoming HR-related events, deadlines, training sessions, or company-wide HR activities.\n\n**When uncertain:**\n\n* If a question is borderline HR-related but you lack specific information, acknowledge the HR relevance but direct the employee to HR for accurate details.\n* Never invent or assume company policies.\n"
+                },
+                {
+                  "role": "user",
+                  "content": "Hi"
+                },
+                {
+                  "role": "assistant",
+                  "content": "Hello! How can I assist you with your HR-related questions today?",
+                  "toolCalls": null
+                },
+                {
+                  "role": "user",
+                  "content": "What happens if I get 15 attendance points in a year?"
+                },
+                {
+                  "role": "assistant",
+                  "content": null,
+                  "toolCalls": [
+                    {
+                      "name": "retrievePolicies",
+                      "arguments": {
+                        "query": "attendance points consequences"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "toolCalls": [
+                  {
+                    "name": "retrievePolicies",
+                    "arguments": {
+                      "query": "attendance points consequences"
+                    }
+                  }
+                ]
+              },
+              "startTime": "2026-05-14T03:51:35.112Z",
+              "endTime": "2026-05-14T03:51:36.619Z"
+            },
+            {
+              "history": [
+                {
+                  "role": "system",
+                  "content": "# Role  \nHR Agent  \n\n# Instructions  \nYou are an HR assistant for CWave. Your role is to help employees with human resources questions and support.\n\n**Scope:**\n\n* Answer only questions related to HR topics: benefits, payroll, leave policies, hiring, onboarding, workplace conduct, performance management, compensation, and similar HR matters.\n* Refer only to CWave's HR knowledge base and policies. Do not provide general HR advice or information from external sources.\n* If a question falls outside HR or is not covered in your knowledge base, politely decline and suggest the employee contact the HR department directly.\n\n**Behavior:**\n\n* Be professional and courteous in all interactions.\n* Keep responses clear and concise.\n* If you're unsure about a policy or don't have the information, say so rather than guessing.\n* Do not discuss topics unrelated to HR (technical support, business strategy, product questions, etc.).\n\n**Tools:**\n\n* Use getEventsTool to retrieve HR calendar events when employees ask about upcoming HR-related events, deadlines, training sessions, or company-wide HR activities.\n\n**When uncertain:**\n\n* If a question is borderline HR-related but you lack specific information, acknowledge the HR relevance but direct the employee to HR for accurate details.\n* Never invent or assume company policies.\n"
+                },
+                {
+                  "role": "user",
+                  "content": "Hi"
+                },
+                {
+                  "role": "assistant",
+                  "content": "Hello! How can I assist you with your HR-related questions today?",
+                  "toolCalls": null
+                },
+                {
+                  "role": "user",
+                  "content": "What happens if I get 15 attendance points in a year?"
+                },
+                {
+                  "role": "assistant",
+                  "content": null,
+                  "toolCalls": [
+                    {
+                      "name": "retrievePolicies",
+                      "arguments": {
+                        "query": "attendance points consequences"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "role": "function",
+                  "content": "[{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Occurrence                   | Points             | Notes                                                  |\n|------------------------------|--------------------|--------------------------------------------------------|\n| Unexcused absence            | 3 points           | Full day missed without approved leave                 |\n| Tardiness (< 30 min)         | 1 point            | Clocking in after scheduled start                      |\",\"timestamp\":\"2026-05-13T06:38:54.719167\"}},\"similarityScore\":0.566210389},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Occurrence                   | Points             | Notes                                                  |\n|------------------------------|--------------------|--------------------------------------------------------|\n| Tardiness (30-60 min)        | 1.5 points         | Must notify manager                                    |\n| Tardiness (> 60 min)         | 2 points           | May count as half-day absence at manager discretion    |\",\"timestamp\":\"2026-05-13T06:38:54.719171\"}},\"similarityScore\":0.561583519},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Occurrence                   | Points             | Notes                                                  |\n|------------------------------|--------------------|--------------------------------------------------------|\n| Early departure (unapproved) | 2 points           | Leaving before shift end without authorization         |\n| No-call/no-show              | 6 points           | Failure to notify AND failure to report                |\",\"timestamp\":\"2026-05-13T06:38:54.719175\"}},\"similarityScore\":0.547836244},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Points Accumulated   | Action                                                   |\n|----------------------|----------------------------------------------------------|\n| 6 points             | Verbal warning (documented)                              |\n| 9 points             | Written warning                                          |\n| 12 points            | Final written warning &amp; performance improvement plan |\",\"timestamp\":\"2026-05-13T06:38:54.719183\"}},\"similarityScore\":0.507305384},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"ConnectWave uses a points-based attendance system for non-exempt employees: Disciplinary thresholds (rolling 12-month period): Cross-reference: Approved leave (PTO, FMLA, etc.) does not generate attendance points. See Leave & Time-Off Policy (CW-HR-002). ConnectWave follows a progressive discipline approach. However, the Company reserves the right to skip steps or proceed directly to termination depending on the severity of the offense.\",\"timestamp\":\"2026-05-13T06:38:54.719046\"}},\"similarityScore\":0.475489},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Occurrence                   | Points             | Notes                                                  |\n|------------------------------|--------------------|--------------------------------------------------------|\n| Pattern absence*             | 1 additional point | *Absences adjacent to weekends/holidays 3+ times in 12 |\",\"timestamp\":\"2026-05-13T06:38:54.719179\"}},\"similarityScore\":0.459575534},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"| Points Accumulated   | Action                                                   |\n|----------------------|----------------------------------------------------------|\n| 15 points            | Termination                                              |\",\"timestamp\":\"2026-05-13T06:38:54.719188\"}},\"similarityScore\":0.448202044},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"Step  3  -  Final  Written  Warning  /  Suspension: A  final  written  warning  may  include  a  performance improvement plan (PIP) of 30-90 days. At the Company's discretion, the employee may also be placed on unpaid suspension for up to 5 business days. Step  4  -  Termination: If  all  prior  steps  fail  to  produce  the  required  improvement,  the  employee's employment  will  be  terminated.  Refer  to  the Offboarding  &  Exit  Procedures  (CW-HR-005) for  the termination process.\",\"timestamp\":\"2026-05-13T06:38:54.719054\"}},\"similarityScore\":0.397652864},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"Step  1  -  Verbal  Counseling: Manager  discusses  the  issue  with  the  employee  and  documents  the conversation.  The  employee  is  informed  of  expected  behavior  and  given  a  reasonable  timeline  for improvement (typically 30 days). Step 2 - Written Warning: If behavior does not improve, a formal written warning is issued and placed in the employee's personnel file. The warning specifies the violation, expected behavior, and consequences of continued non-compliance.\",\"timestamp\":\"2026-05-13T06:38:54.719050\"}},\"similarityScore\":0.38846904},{\"chunk\":{\"type\":\"text-chunk\",\"content\":\"Content field not found in metadata\",\"metadata\":{\"source\":\"ConnectWave_Employee_Handbook_Code_of_Conduct.pdf\",\"text\":\"The following offenses may result in termination without progressive discipline:\",\"timestamp\":\"2026-05-13T06:38:54.719058\"}},\"similarityScore\":0.366517156}]",
+                  "name": "retrievePolicies"
+                }
+              ],
+              "output": {
+                "role": "assistant",
+                "content": "If you accumulate 15 attendance points within a year at CWave, it may lead to termination of employment. It's important to manage attendance carefully to avoid reaching this threshold. If you have more questions or need guidance, please feel free to ask or contact the HR department directly.",
+                "toolCalls": null
+              },
+              "startTime": "2026-05-14T03:51:43.672Z",
+              "endTime": "2026-05-14T03:51:45.348Z"
+            }
+          ],
+          "output": {
+            "role": "assistant",
+            "content": "If you accumulate 15 attendance points within a year at CWave, it may lead to termination of employment. It's important to manage attendance carefully to avoid reaching this threshold. If you have more questions or need guidance, please feel free to ask or contact the HR department directly.",
+            "toolCalls": null
+          },
+          "tools": [
+            {
+              "name": "retrievePolicies",
+              "description": "retrievePolicies",
+              "parametersSchema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "name": "getEventsTool",
+              "description": "Gets events. "
+            },
+            {
+              "name": "getLeaveBalance",
+              "description": "Get the leave balance for an employee. Returns annual, sick, and casual leave balances. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName"
+                ]
+              }
+            },
+            {
+              "name": "applyLeave",
+              "description": "Apply for leave on behalf of an employee. leaveType must be 'annual', 'sick', or 'casual'. Dates should be in YYYY-MM-DD format. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  },
+                  "leaveType": {
+                    "description": "Type of leave:annual,sick,or casual",
+                    "type": "string"
+                  },
+                  "endDate": {
+                    "description": "End date in YYYY-MM-DD format",
+                    "type": "string"
+                  },
+                  "numberOfDays": {
+                    "format": "int64",
+                    "description": "Number of leave days requested",
+                    "type": "integer"
+                  },
+                  "startDate": {
+                    "description": "Start date in YYYY-MM-DD format",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName",
+                  "leaveType",
+                  "startDate",
+                  "endDate",
+                  "numberOfDays"
+                ]
+              }
+            },
+            {
+              "name": "updateLeaveStatus",
+              "description": "Approve or reject a pending leave request for an employee. action must be 'approve' or 'reject'. requestIndex is the 0-based index of the leave request in the employee's history. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  },
+                  "requestIndex": {
+                    "format": "int64",
+                    "description": "0-based index of the leave request in the employee's history",
+                    "type": "integer"
+                  },
+                  "action": {
+                    "description": "Action to perform:approve or reject",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName",
+                  "requestIndex",
+                  "action"
+                ]
+              }
+            },
+            {
+              "name": "getLeaveHistory",
+              "description": "Get the full leave request history for an employee. Supported employees: James, John, Jinger.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {
+                  "employeeName": {
+                    "description": "Name of the employee",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "employeeName"
+                ]
+              }
+            },
+            {
+              "name": "listEmployees",
+              "description": "List all employees registered in the leave management system.",
+              "parametersSchema": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            }
+          ],
+          "toolCalls": [
+            {
+              "name": "retrievePolicies",
+              "arguments": {
+                "query": "attendance points consequences"
+              }
+            }
+          ],
+          "startTime": "2026-05-14T03:51:35.110Z",
+          "endTime": "2026-05-14T03:51:45.353Z"
+        }
+      ],
+      "created_on": "2026-05-14T03:52:16.903Z"
+    }
+  ],
+  "created_on": "2026-05-13T15:57:05.251Z"
+}

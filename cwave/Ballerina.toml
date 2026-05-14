@@ -1,0 +1,10 @@
+[package]
+org = "shafreenanfar"
+name = "cwave"
+version = "0.1.0"
+distribution = "2201.13.4"
+title = "cwave"
+
+[build-options]
+sticky = true
+observabilityIncluded = true

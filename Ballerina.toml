@@ -1,0 +1,3 @@
+[workspace]
+title = "cwave"
+packages = ["cwave", "cwave_mcp_leave_service"]
