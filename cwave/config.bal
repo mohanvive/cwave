@@ -6,3 +6,4 @@ configurable string refreshToken = ?;
 configurable string clientId = ?;
 configurable string clientSecret = ?;
 configurable string pinecone_key = ?;
+configurable string mcpUrl = ?;

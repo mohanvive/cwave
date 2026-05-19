@@ -15,4 +15,4 @@ final calendar:Client calendarClient = check new ({
         clientSecret: clientSecret
     }
 });
-final AiMcpbasetoolkit aiMcpbasetoolkit = check new ("http://localhost:8080/mcp");
+final AiMcpbasetoolkit aiMcpbasetoolkit = check new (string `${mcpUrl}`);
