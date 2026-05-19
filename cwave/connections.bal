@@ -2,7 +2,6 @@ import ballerina/ai;
 import ballerinax/ai.openai;
 import ballerinax/ai.pinecone;
 import ballerinax/googleapis.calendar;
-import ballerinax/pinecone.vector;
 
 final openai:ModelProvider openaiModelprovider = check new (string `${openai_key}`, "gpt-4o");
 final pinecone:VectorStore pineconeVectorstore = check new ("https://cwave-collection-2osj67z.svc.aped-4627-b74a.pinecone.io", string `${pinecone_key}`);
