@@ -1,3 +1,2 @@
-- org: shafreenanfar
-  project: cwave
-  local: true
+- org: devantdemos
+  project: wso2con2026-agents
