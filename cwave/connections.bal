@@ -15,4 +15,4 @@ final calendar:Client calendarClient = check new ({
         clientSecret: clientSecret
     }
 });
-final AiMcpbasetoolkit aiMcpbasetoolkit = check new (string `${mcpUrl}`);
+final AiMcpbasetoolkit aiMcpbasetoolkit = check new ("https://e8f34e4e-e9bb-4799-b725-7173d271fa62-dev.e1-us-east-azure.choreoapis.dev/wso2con2026-agents/cwave-mcp-leave-service/v1.0/mcp");
